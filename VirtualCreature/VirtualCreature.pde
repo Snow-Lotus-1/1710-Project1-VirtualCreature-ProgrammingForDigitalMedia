@@ -274,6 +274,7 @@ void loadBgImages()
 {
   //gif link
   //https://forums.rpgmakerweb.com/data/attachments/101/101696-0c29ce073e3bbc94bf77fb127ed9bdfd.jpg
+  //https://forums.rpgmakerweb.com/index.php?threads/swinging-grass-and-flowers-tileset.112877/
   bgFrame[0] = loadImage("background/background1.png");
   bgFrame[1] = loadImage("background/background2.png");
   bgFrame[2] = loadImage("background/background3.png");
@@ -302,6 +303,7 @@ void loadCreatureImages()
 {
   //gif link
   //https://i.pinimg.com/originals/13/6a/e0/136ae07e424e878636575ff42406853e.gif
+  //https://images.app.goo.gl/PHcnNaT8ksfyZfbz9
   creatureFrame[0] = loadImage("creature/creature1.png");
   creatureFrame[1] = loadImage("creature/creature2.png");
   creatureFrame[2] = loadImage("creature/creature3.png");
@@ -313,6 +315,7 @@ void loadCreatureImages()
   //////////////////////////////////////////////////////
   //gif link
   //https://i.pinimg.com/originals/71/b7/aa/71b7aab38cb5d346a973edfae8e0f9e2.gif
+  //https://images.app.goo.gl/BZCQQRnF1nfQPY1h9
   rCreatureFrame[0] = loadImage("resting/resting1.png");
   rCreatureFrame[1] = loadImage("resting/resting2.png");
   rCreatureFrame[2] = loadImage("resting/resting3.png");
@@ -327,6 +330,7 @@ void loadCreatureImages()
 void loadLightningImages()
 {
   //gif link
+  //https://i.pinimg.com/originals/c2/41/98/c241988492efeef2d777b50f4426f122.gif
   //https://co.pinterest.com/pin/466896686360677966/
   lightningFrame[0] = loadImage("lightning/lightning1.png");
   lightningFrame[1] = loadImage("lightning/lightning2.png");
@@ -379,6 +383,7 @@ void loadSparkImages()
 {
   //gif link
   //https://www.herculeanpixel.com/images/news/ppb_shock.gif
+  //https://www.herculeanpixel.com/news/topic/pixel-art?page=9
   sparkFrame[0] = loadImage("spark/spark1.png");
   sparkFrame[1] = loadImage("spark/spark2.png");
   sparkFrame[2] = loadImage("spark/spark3.png");
@@ -396,6 +401,8 @@ void loadSparkImages()
 void loadEnergyImages()
 {
   //uses same gif as spark
+  //https://www.herculeanpixel.com/images/news/ppb_shock.gif
+  //https://www.herculeanpixel.com/news/topic/pixel-art?page=9
   energyFrame[0] = loadImage("energy/energy1.png");
   energyFrame[1] = loadImage("energy/energy2.png");
   energyFrame[2] = loadImage("energy/energy3.png");
