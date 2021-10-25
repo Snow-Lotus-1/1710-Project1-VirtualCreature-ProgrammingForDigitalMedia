@@ -1,11 +1,16 @@
 //position of creature, position of background, the target point 
 PVector position, position2, target, position_satellite;
+//the actual creature
 PImage creature;
+//lightning effect that strikes it
 PImage lightning;
+//the target creature chases after
 PImage spark;
+//the energy surrounding creature after getting spark
 PImage energy[];
 PImage bg;
 
+//arrays to house the images of the gifs
 PImage[] bgFrame = new PImage[4];
 PImage[] creatureFrame = new PImage[4];
 PImage[] rCreatureFrame = new PImage[5];
@@ -14,18 +19,24 @@ PImage[] sparkFrame = new PImage[12];
 PImage[] lightningFrame = new PImage[15];
 float margin = 50, targetX, targetY;
 
+//checks if everything is running, used this to pause everything for a bit to simulate rest
 boolean isRunning = true;
+
+//energy related variables
 float angle_satellit;
 int collectedNum = 0;
 
+//trigger distances for the crature that chases after the target
 float triggerDistance1 = 100;
 float triggerDistance2 = 5;
 float movementSpeed = 0.02;
 
 float randomness = 1;
+//determines the rest time
 boolean resting = false;
 int restingCounter = 0;
 
+//counters for animations
 float aniBgCounter = 0;
 float aniCreatureCounter = 0;
 float aniRCreatureCounter = 0;
@@ -33,6 +44,7 @@ float aniSparkCounter = 0;
 float aniEnergyCounter = 0;
 float aniLightningCounter = 0;
 
+//keep track of the frames of the gifs
 int aniBgFrame = 0;
 int aniCreatureFrame = 0;
 int aniRCreatureFrame = 0;
@@ -40,6 +52,7 @@ int aniSparkFrame = 0;
 int aniEnergyFrame = 0;
 int aniLightningFrame = 0;
 
+//useful tool to check ranges
 boolean debug = false;
 
 void setup() { 
@@ -52,12 +65,14 @@ void setup() {
   angle_satellit = 0.0;
   pickTarget();
   
+  //load all the animation frames
   loadBgImages();
   loadSparkImages();
   loadCreatureImages();
   loadEnergyImages();
   loadLightningImages();
   
+  //everything is based off of corner except for the background, only switching to corner when needed
   ellipseMode(CENTER);
   rectMode(CENTER);
   imageMode(CENTER);
