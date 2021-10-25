@@ -1,3 +1,6 @@
+//based off of Meng Jia's vitrual Creature example and creature examples in the class repo
+//https://github.com/eecs17xx/eecs1710-2021f/tree/main/Week04
+
 //position of creature, position of background, the target point 
 PVector position, position2, target, position_satellite;
 //the actual creature
@@ -72,7 +75,7 @@ void setup() {
   loadEnergyImages();
   loadLightningImages();
   
-  //everything is based off of corner except for the background, only switching to corner when needed
+  //everything is based off of center except for the background, only switching to corner when needed
   ellipseMode(CENTER);
   rectMode(CENTER);
   imageMode(CENTER);
